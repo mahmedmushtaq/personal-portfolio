@@ -6,6 +6,7 @@ import MobHeader from './mob-header';
 import MenuIcon from '@material-ui/icons/Menu';
 import './navbar-item.css';
 import { Link } from 'react-router-dom';
+import ScrollIntoView from 'react-scroll-into-view';
 
 const useStyles = makeStyles((theme) => ({
   logo: {
@@ -50,6 +51,7 @@ export default (props) => {
     <Grid
       style={{ marginTop: 15 }}
       container
+      id="header"
       justify={'space-around'}
       alignItems={'center'}
     >
@@ -79,9 +81,11 @@ export default (props) => {
             >
               <Grid container justify="space-around">
                 {navBarItems.map((item) => (
-                  <Grid item key={item.id} className={'navbar-item'}>
-                    <Typography variant="h5">{item.name}</Typography>
-                  </Grid>
+                  <ScrollIntoView key={item.id} selector={item.to}>
+                    <Grid item className={'navbar-item'}>
+                      <Typography variant="h5">{item.name}</Typography>
+                    </Grid>
+                  </ScrollIntoView>
                 ))}
               </Grid>
             </Grid>

@@ -33,7 +33,7 @@ export default function GalleryItem(props) {
   const classes = useStyles();
   const { title, text, mainImage, url } = props;
 
-  // 
+  //
   return (
     <Card className={classes.root}>
       <CardHeader title={title} style={{ color: 'white' }} />

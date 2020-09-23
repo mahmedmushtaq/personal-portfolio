@@ -8,7 +8,7 @@ import {
   ListItemIcon,
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
-
+import ScrollIntoView from 'react-scroll-into-view';
 import clsx from 'clsx';
 import navBarItems from './navBarItems';
 
@@ -39,12 +39,14 @@ export default (props) => {
     >
       <List>
         {navBarItems.map((item, index) => (
-          <ListItem button key={item.id}>
-            <ListItemIcon>{item.icon}</ListItemIcon>
-            <Typography variant="h5" className={classes.listItemText}>
-              {item.name}
-            </Typography>
-          </ListItem>
+          <ScrollIntoView selector={item.to} key={item.id}>
+            <ListItem button>
+              <ListItemIcon>{item.icon}</ListItemIcon>
+              <Typography variant="h5" className={classes.listItemText}>
+                {item.name}
+              </Typography>
+            </ListItem>
+          </ScrollIntoView>
         ))}
       </List>
     </div>

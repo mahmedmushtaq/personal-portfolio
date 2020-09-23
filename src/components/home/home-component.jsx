@@ -8,6 +8,7 @@ import {
 } from '@material-ui/core';
 import { useTheme } from '@material-ui/styles';
 import AboutMePic from '../../assets/images/aboutme.png';
+import ShuttlePic from '../../assets/images/shuttle.png';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -44,11 +45,11 @@ const useStyles = makeStyles((theme) => ({
     margin: '30px 0',
     [theme.breakpoints.down('sm')]: {
       textAlign: 'center',
-      width: '80vw',
+      width: '90vw',
     },
 
     [theme.breakpoints.down('md')]: {
-      width: '70vw',
+      width: '80vw',
     },
 
     [theme.breakpoints.down('xs')]: {
@@ -63,8 +64,10 @@ export default (props) => {
   const sm = useMediaQuery(theme.breakpoints.down('sm'));
   const md = useMediaQuery(theme.breakpoints.down('md'));
 
+  // home component actually is about
+
   return (
-    <Grid contaianer>
+    <Grid id="about" contaianer>
       <Grid
         item
         container
@@ -91,21 +94,25 @@ export default (props) => {
             >
               <Grid item>
                 <Typography className={classes.introh1}>
-                  Sr. MERN AND MEVN Developer
+                  Sr. MERN AND MEVN Developer{' '}
+                  <span className={classes.shuttleIcon}>
+                    <img src={ShuttlePic} width={26} />
+                  </span>
                 </Typography>
               </Grid>
+              <Grid item></Grid>
               <Grid item>
                 <div className={classes.hrLine}></div>
               </Grid>
             </Grid>
 
             <Grid item className={classes.introp}>
-              <Typography >
+              <Typography>
                 I am a full stack developer with more than 3 years of experience
                 in building the full-stack web application and apps. During my
                 career I have built many different type of full stack web
-                application and apps such as ecommerce, B2B, social media, canvas and
-                elearning in MERN and MEVN stack.
+                application and apps such as ecommerce, B2B, social media,
+                canvas and elearning in MERN and MEVN stack.
                 <br /> <br />
                 So you want to implement your idea or online your business.{' '}
                 <b>Sounds Good!</b>. Let's get started
@@ -119,7 +126,7 @@ export default (props) => {
                 style={{ margin: '20px 0' }}
               >
                 <Typography variant="h5" style={{ fontSize: 18 }}>
-                   Contact Me
+                  Contact Me
                 </Typography>
               </Button>
             </Grid>

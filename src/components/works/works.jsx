@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 export default (props) => {
   const { worksData } = useSelector((state) => state.works);
   return (
-    <Grid container alignItems="center" direction="column">
+    <Grid id="works" container alignItems="center" direction="column">
       <Grid item>
         <Typography variant="h1">Works</Typography>
       </Grid>

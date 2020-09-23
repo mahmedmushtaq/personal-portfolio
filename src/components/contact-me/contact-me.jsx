@@ -10,6 +10,10 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 80,
     margin: '30px 20px',
     '&:hover': {},
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 50,
+      margin: '30px 5px',
+    },
   },
   a: {
     color: 'white',
@@ -22,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
 export default (props) => {
   const classes = useStyles();
   return (
-    <Grid container direction="column" alignItems="center">
+    <Grid container id="contact" direction="column" alignItems="center">
       <Grid item>
         <Typography variant="h1">Contact Me</Typography>
       </Grid>

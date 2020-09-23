@@ -7,6 +7,7 @@ import {
   Works,
   ContactMe,
   Footer,
+  DirectedToTop,
 } from '../../components';
 import { useTheme } from '@material-ui/styles';
 import { useDispatch } from 'react-redux';
@@ -48,6 +49,10 @@ export default (props) => {
 
       <Grid item style={{ marginTop: 40 }}>
         <Footer />
+      </Grid>
+
+      <Grid item>
+        <DirectedToTop />
       </Grid>
     </Grid>
   );

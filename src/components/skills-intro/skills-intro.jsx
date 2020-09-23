@@ -14,6 +14,9 @@ import { Link } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
   animationGrid: {
     width: '45vw',
+    [theme.breakpoints.down('sm')]: {
+      width: '75vw',
+    },
   },
   infoP: {
     width: '32vw',
@@ -21,6 +24,13 @@ const useStyles = makeStyles((theme) => ({
     margin: '10px 0',
     [theme.breakpoints.down('sm')]: {
       width: '50vw',
+      fontSize: 19,
+      fontWeight: 300,
+    },
+  },
+  skillH: {
+    [theme.breakpoints.down('sm')]: {
+      textAlign: 'center',
     },
   },
 }));
@@ -40,6 +50,7 @@ export default (props) => {
 
   return (
     <Grid
+      id="skills"
       container
       direction={md ? 'column' : 'row'}
       alignItems="center"
@@ -49,7 +60,9 @@ export default (props) => {
       <Grid item style={{ marginLeft: 'auto', marginRight: 'auto' }}>
         <Grid container direction="column" justify="center" alignItems="center">
           <Grid item>
-            <Typography variant="h1">Let's Check Out My Skills</Typography>
+            <Typography variant="h1" className={classes.skillH}>
+              Let's Check Out My Skills
+            </Typography>
           </Grid>
           <Grid item>
             <Typography variant="h6" className={classes.infoP}>

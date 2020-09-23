@@ -6,3 +6,4 @@ export { default as Works } from './works/works';
 export { default as GridItem } from './gallery-item/gallery-item';
 export { default as ContactMe } from './contact-me/contact-me';
 export { default as Footer } from './footer/footer';
+export { default as DirectedToTop } from './directed-to-top/directed-to-top';
