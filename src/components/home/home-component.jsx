@@ -120,15 +120,21 @@ export default (props) => {
             </Grid>
 
             <Grid item style={{}}>
-              <Button
-                variant="contained"
-                color="primary"
-                style={{ margin: '20px 0' }}
+              <a
+                href="https://www.linkedin.com/in/m-ahmed-mushtaq"
+                target="_blank"
+                class="a-white"
               >
-                <Typography variant="h5" style={{ fontSize: 18 }}>
-                  Contact Me
-                </Typography>
-              </Button>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  style={{ margin: '20px 0' }}
+                >
+                  <Typography variant="h5" style={{ fontSize: 18 }}>
+                    Contact Me
+                  </Typography>
+                </Button>
+              </a>
             </Grid>
           </Grid>
         </Grid>

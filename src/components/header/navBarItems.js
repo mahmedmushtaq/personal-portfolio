@@ -3,6 +3,7 @@ import InfoIcon from '@material-ui/icons/Info';
 import WorkIcon from '@material-ui/icons/Work';
 import Skills from '@material-ui/icons/FlightTakeoff';
 import Contact from '@material-ui/icons/PermContactCalendar';
+import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import React from 'react';
 
 const navBarItems = [
@@ -13,11 +14,18 @@ const navBarItems = [
   //   icon: <HomeIcon style={{ color: 'white' }} />,
   // },
   {
-    id: 2,
+    id: 1,
     name: 'About',
     to: '#about',
     icon: <InfoIcon style={{ color: 'white' }} />,
   },
+  {
+    id: 2,
+    name: 'Intro',
+    to: '#short-intro',
+    icon: <EmojiPeopleIcon style={{ color: 'white' }} />,
+  },
+
   {
     id: 3,
     name: 'Skills',

@@ -38,6 +38,7 @@ export default (props) => {
   return (
     <Grid
       container
+      id="short-intro"
       direction={md ? 'column-reverse' : 'row'}
       justify="space-between"
       alignItems="center"
@@ -76,15 +77,21 @@ export default (props) => {
           </Grid>
 
           <Grid item>
-            <Button
-              variant="contained"
-              color="primary"
-              style={{ marginTop: 20, marginBottom: 20 }}
+            <a
+              href="https://www.linkedin.com/in/m-ahmed-mushtaq"
+              target="_blank"
+              class="a-white"
             >
-              <Typography variant="h5" style={{ fontSize: 19 }}>
-                 Contact Me
-              </Typography>
-            </Button>
+              <Button
+                variant="contained"
+                color="primary"
+                style={{ marginTop: 20, marginBottom: 20 }}
+              >
+                <Typography variant="h5" style={{ fontSize: 19 }}>
+                  Contact Me
+                </Typography>
+              </Button>
+            </a>
           </Grid>
         </Grid>
       </Grid>
