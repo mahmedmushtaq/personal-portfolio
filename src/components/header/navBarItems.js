@@ -9,7 +9,7 @@ const navBarItems = [
   { id: 1, name: 'Home', icon: <HomeIcon style={{ color: 'white' }} /> },
   { id: 2, name: 'About', icon: <InfoIcon style={{ color: 'white' }} /> },
   { id: 3, name: 'Skills', icon: <Skills style={{ color: 'white' }} /> },
-  { id: 4, name: 'Services', icon: <WorkIcon style={{ color: 'white' }} /> },
+  { id: 4, name: 'Works', icon: <WorkIcon style={{ color: 'white' }} /> },
   {
     id: 5,
     name: 'Contact',

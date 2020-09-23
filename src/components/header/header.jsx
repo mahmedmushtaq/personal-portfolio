@@ -4,6 +4,8 @@ import { makeStyles, useTheme, useMediaQuery } from '@material-ui/core';
 import navBarItems from './navBarItems';
 import MobHeader from './mob-header';
 import MenuIcon from '@material-ui/icons/Menu';
+import './navbar-item.css';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   logo: {
@@ -19,8 +21,13 @@ const useStyles = makeStyles((theme) => ({
     width: '70vw',
 
     [theme.breakpoints.down('sm')]: {
-      width: '40vw',
+      width: '50vw',
+      marginLeft: 20,
+      marginRight: 0,
     },
+  },
+  rightGrid: {
+    marginRight: 20,
   },
   hireMe: {
     fontSize: '2.4em',
@@ -40,14 +47,19 @@ export default (props) => {
   const toggleDrawer = () => setDrawer(!drawer);
 
   return (
-    <Grid container justify={'space-around'} alignItems={'center'}>
+    <Grid
+      style={{ marginTop: 15 }}
+      container
+      justify={'space-around'}
+      alignItems={'center'}
+    >
       <Grid item className={classes.leftGrid}>
         <Grid
           container
           alignItems="center"
           justify={sm ? undefined : 'space-around'}
         >
-          <Grid item>
+          <Grid item component={Link} to="/" className="a-white">
             <Typography className={classes.logo} variant={'h1'}>
               M
             </Typography>
@@ -67,7 +79,7 @@ export default (props) => {
             >
               <Grid container justify="space-around">
                 {navBarItems.map((item) => (
-                  <Grid item key={item.id}>
+                  <Grid item key={item.id} className={'navbar-item'}>
                     <Typography variant="h5">{item.name}</Typography>
                   </Grid>
                 ))}
@@ -77,7 +89,11 @@ export default (props) => {
         </Grid>
       </Grid>
 
-      <Grid item>
+      {/* <Grid item>
+        <Typography className={['navbar-item']}>SImple item</Typography>
+      </Grid> */}
+
+      <Grid item className={classes.rightGrid}>
         <Grid container alignItems="center" justify="center">
           <Grid item>
             <Button variant="contained" color="primary">

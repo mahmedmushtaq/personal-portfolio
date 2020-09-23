@@ -16,9 +16,7 @@ const useStyles = makeStyles((theme) => ({
   list: {
     width: 200,
   },
-  fullList: {
-    width: 'auto',
-  },
+
   listItemText: {
     color: 'white',
   },
