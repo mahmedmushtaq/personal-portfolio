@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     minWidth: 300,
     height: 380,
 
-    margin: '20px 0',
+    margin: '20px 10px',
     backgroundColor: theme.palette.common.black,
   },
   media: {
