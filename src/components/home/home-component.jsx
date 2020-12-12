@@ -81,7 +81,8 @@ export default (props) => {
             {/* intro side  */}
 
             <Grid item className={classes.meeth1}>
-              <Typography variant="h1">Let's meet&nbsp;M Ahmed</Typography>
+              {/* <Typography variant="h1">Let's meet&nbsp;M Ahmed</Typography> */}
+              <Typography variant="h1">M Ahmed Mushtaq</Typography>
             </Grid>
 
             <Grid
@@ -140,7 +141,12 @@ export default (props) => {
         </Grid>
 
         <Grid item>
-          <img src={AboutMePic} alt="" style={{ width: '100%' }} />
+          {/* AboutMePic */}
+      
+          {/* <img 
+          src={AboutMePic}
+          alt="" 
+          style={{ width: '100%' }} /> */}
         </Grid>
       </Grid>
     </Grid>
