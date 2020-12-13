@@ -109,14 +109,10 @@ export default (props) => {
 
             <Grid item className={classes.introp}>
               <Typography>
-                I am a full stack developer with more than 3 years of experience
-                in building the full-stack web application and apps. During my
-                career I have built many different type of full stack web
-                application and apps such as ecommerce, B2B, social media,
-                canvas and elearning in MERN and MEVN stack.
-                <br /> <br />
-                So you want to implement your idea or online your business.{' '}
-                <b>Sounds Good!</b>. Let's get started
+              I love to dig into client ideas and built them with modern technologies. I create, optimize, and scale the innovative ideas of my client very efficiently.  
+
+ <br/> I keep evolving about the latest technologies in the market and how to use these technologies to build new ideas?
+<br/>So you have the next big idea or maintain your website. Don't worry! I am here to help you.
               </Typography>
             </Grid>
 

@@ -95,7 +95,7 @@ export const worksData = [
   {
     id: 11,
     title: 'AirBnB Scrapper',
-    text: 'This scrappe Scrape Airbnb website by using puppeteer',
+    text: 'This scrapper Scrape Airbnb website by using puppeteer',
     mainImage: 'https://i.ytimg.com/vi/OEGm7LXAN_c/maxresdefault.jpg',
     url: 'https://github.com/mahmedmushtaq/airbnb-scrapper',
   },
@@ -119,7 +119,7 @@ export const worksData = [
   {
     id: 14,
     title: 'Math Learning(For Client)',
-    text: 'Math Learning Wesbite Built By Using Vue.js With Quasar Framework',
+    text: 'Math Learning Website Built By Using Vue.js With Quasar Framework',
     mainImage: 'https://i.ibb.co/ZG6Y3hR/math-learning-website.png',
     url: 'https://math.learning-canvas.com/',
   },
